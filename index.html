@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Train Schedule</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<section>
+		<header id="headerbar">
+			<h1 id="ts">SkyTrain Schedule</h1>
+			<p id="fs">Travel Management System</p>
+			<img id="sensig" src="images/sensig.png" alt="sensig">
+			
+		</header>
+			
+		<article id="ctsarticle">
+			<h2 id="cts">Current Train Schedule</h2>
+	
+			<table id="trainSchedule">
+				<tr>
+					<th>Train Name</th>
+					<th>Destination</th>
+					<th>Frequency (minutes)</th>
+					<th>Next Arrival</th>
+					<th>Minutes Away</th>
+				</tr>
+	  		</table>
+		</article>
+			
+		<article id="tiparticle">
+			<h2 id="tip">Train Input Panel</h2>
+			<form>
+				<div>
+					
+					<label for="trainName">🚂 Train Name<font color="white">..</font></label>
+			    	<input type="text" id="trainName" placeholder="_ex: Hogwarts Express"><br>
+			    	<label for="destination">🗺 Destination<font color="white">..</font></label>
+			    	<input type="text" id="destination" placeholder="_Enter desired destination..."><br>
+			    	<label for="time">🎲 First Train<font color="white">---.</font></label>
+			    	<input type="text" id="time" placeholder="_16:00 (HH:mm - military time)"><br>
+			    	<label for="frequency">🕗 Frequency<font color="white">...</font></label>
+			    	<input type="text" id="frequency" placeholder="_Enter in minutes..."><br>
+			  		<button type="submit" id="submit">✅ Update Schedule</button>
+		  		</div>
+			</form>
+		</article>		
+	</section>
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyBymmG67LczGeNrY_ohl7OXOoHq3MQQZhw",
+		    authDomain: "hw-trainschedule-7.firebaseapp.com",
+		    databaseURL: "https://hw-trainschedule-7.firebaseio.com",
+		    projectId: "hw-trainschedule-7",
+		    storageBucket: "",
+		    messagingSenderId: "861746549243"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="script.js"></script>
+</html>

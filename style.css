@@ -1,0 +1,196 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html { 
+    background: url("images/bgx.jpg");
+    height: 100%; 
+    background-position: top-center;
+    background-repeat: repeat;
+    /*background-size: cover;*/
+}
+
+body {
+	margin: 0 auto;
+	font-family: sans-serif;
+	min-width: 500px;
+}
+section {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+header {
+	background-image: url("images/denobar.gif");
+	background-repeat: no-repeat;
+	background-size: 110% 150%;
+	border: solid 1px silver;
+	background-color: #999;
+	border-radius: 5px;
+	height: 150px;
+	margin: 10px;
+	text-align: center;
+}
+
+#headerbar {
+	border-bottom-left-radius: 600px;
+	border-top-right-radius: 600px;
+}
+
+#ts {
+	text-align: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-shadow: 2px 2px 4px purple;
+	color: black;
+}
+
+#fs {
+	text-align: left;
+	margin-left: 30px;
+	text-shadow: 2px 2px 4px purple;
+	color: teal;
+}
+
+#sensig {
+	margin-bottom: 0px;
+	border-bottom-right-radius: 30px;
+}
+
+img {
+	float: right;
+	display: relative;
+	margin: 10px 10px 0 -100px;
+	width: 100px;
+}
+article {
+	display: block;
+	border: solid 1px silver;
+	border-radius: 5px;
+	min-height: 100px;
+	margin: 10px;
+}
+p:first-of-type {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 0.9em;
+}
+p {
+	color: #fff;
+}
+h1, h2 {
+	color: #fff;
+}
+h1 {
+	font-size: 1.9em;
+	margin: 50px 0 0;
+	text-shadow: 2px 2px 4px black;
+}
+h2 {
+	background-color: black;
+	margin-top: 0;
+	font-size: 0.9em;
+	padding: 5px;
+}
+table {
+	width: 100%;
+	text-align: left;
+	margin: 0 10px;
+}
+form {
+	width: 100%;
+	text-align: left;
+}
+form div {
+	margin: 0 15px 10px 10px;
+}
+label {
+	font-weight: bold;
+}
+
+#trainName {
+	border-bottom-right-radius: 99%;
+	width: 80%;
+}
+
+#destination {
+	border-bottom-right-radius: 99%;
+	width: 75%;
+}
+
+#time {
+	border-bottom-right-radius: 99%;
+	width: 65%;
+}
+
+#frequency {
+	border-bottom-right-radius: 99%;
+	width: 50%;
+}
+
+#submit {
+	border-top-left-radius: 99%;
+	border-bottom-right-radius: 20%;
+}
+
+#cts {
+	border-bottom-right-radius: 99%;
+}
+
+#tip {
+	border-bottom-right-radius: 99%;
+}
+
+#ctsarticle {
+	border-bottom-right-radius: 90px;
+	border-top-left-radius: 90px;
+	background-color: white;
+}
+
+#tiparticle {
+	border-top-left-radius: 95%;
+	border-bottom-right-radius: 400%;
+	background-color: white;
+}
+
+input {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+button {
+	background-color: black;
+	color: #fff;
+	padding: 5px 10px;
+	border: solid 1px silver;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: green;
+	border-color: black;
+}
+
+p.direction {
+	font-size: 0.7em;
+	color: #000;
+	line-height: 3em;
+}
+
+span {
+	font-weight: bold;
+}
+
+th, td, label, input {
+	font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+	section {
+		width: 100%;
+	}
+}
